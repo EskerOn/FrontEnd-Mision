@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <style>
+       html {
+  font-family: "Yusei Magic", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #0096c7;
+}
+a:hover {
+  /* focus, active */
+  opacity: 0.8;
+}
+img {
+  max-width: 100%;
+}
+.paragraph {
+  line-height: 1.8em;
+  font-weight: 200;
+}
+.title {
+  text-transform: capitalize;
+  text-align: center;
+}
+.container {
+  background: #d5a43a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #735f3a,
+    #d5a43a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #735f3a,
+    #d5a43a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  position: relative;
+  max-width: 1500px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 2px 2px 8px 2px #192931bd; /*DifHoriz, difVertic, focus, amplitud, color*/
+  /*box-shadow: 0 3px 6px rgba(0,0,0,0,16), 0 3px 6px rgba(0,0,0,0,23);*/
+  border-radius: 4px;
+  padding: 1em;
+  overflow: scroll; /*hidden, scroll*/
+  /*overflow-x: hidden;*/
+}
+
+td {
+  display: block;
+  
+}
+td:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #b64900;
+}
+th {
+  display: none;
+}
+.tabla {
+  width: 100%;
+  border-spacing: 0;
+}
+.tabla td,
+.tabla th {
+  padding: 1em;
+  text-align: left;
+}
+.tabla tr:nth-child(even) {
+  background-color: #eed1ac;
+}
+.fa-star {
+  color: rgb(255, 201, 24);
+}
+
+.title-item {
+  /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #0077B6; */
+  border-bottom: solid 2px #0077b6;
+  padding-bottom: 1em;
+
+  /* padding: up right down left;
+  padding: up/down right/left; */
+}
+.mainimg {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+.adr {
+  font-weight: bold;
+  color: #0077b6;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+.position {
+  background-color: #0077b6;
+  color: white;
+  padding: 0.4em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+  font-size: 2em;
+}
+
+.close {
+  height: 40px;
+  width: 300px;
+  border-radius: 5%;
+  color: white;
+  background-color: #b66700;
+  display: inline-block;
+  font-weight: 300;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px #19293194;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+@media (min-width: 900px) {
+  td {
+    width: auto;
+    display: table-cell;
+  }
+  th {
+    display: table-cell;
+  }
+  td:nth-of-type(1) {
+    font-size: 1em;
+  }
+  .content {
+    padding: 1.8em;
+  }
+}
+@media (min-height: 550px) {
+  .content {
+    height: 500px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="content animate__animated animate__zoomIn">
+          <img class="logo" src="imgs/logo.png" width='200' height='200'>
+            <h1 class="title" >Formulario</h1>
+            <hr>
+            <label for="Input1">Ingrese nombre completo</label><br>
+            <input type="text" id="Input1" name="Input1">
+            <br><br>
+            <label for="tel1">Ingrese numero telefonico</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+            <label for="correo1">Ingrese Correo electronico</label><br>
+            <input type="email" id="correo1" name="correo1"><br><br>
+
+            <label for="Input2">Ingrese Descripcion del pastel que desea</label><br>
+            <input type="text" id="Input2" name="Input2">
+            <br><br>
+
+            <label for="sabor1">Elige tu sabor preferido</label><br>
+            <input list="sabor1">
+            <datalist id="sabor1">
+                <option value="Chocolate">
+                <option value="Coco">
+                <option value="Napolitano">
+            </datalist>
+            <br><br>
+            <label for="sabor2">Puedes elegir un sabor secundario, si solo deseas un sabor selecciona Ninguno</label><br>
+            <input list="sabor2">
+            <datalist id="sabor2">
+                <option value="Chocolate">
+                <option value="Coco">
+                <option value="Napolitano">
+                <option value="Ninguno">
+            </datalist>
+            <br><br>
+            <label for="adorno1">Elige tu primer adorno, si no lo deseas elige ninguno</label><br>
+            <input list="adorno1">
+            <datalist id="adorno1">
+                <option value="Feliz cumpleaños">
+                <option value="Love">
+                <option value="Ninguno">
+            </datalist>
+
+            <br><br>
+            <label for="adorno2">Elige tu segundo adorno, si no lo deseas elige ninguno</label><br>
+            <input list="adorno2">
+            <datalist id="adorno2">
+              <option value="Feliz cumpleaños">
+                <option value="Love">
+                <option value="Ninguno">
+            </datalist>
+
+    <br><br>
+    <div class="actions">
+      <a href="formcomprar.html" class="close">
+        <span>Comprar</span>
+      </a>
+    </div>
+    </div>
+    
+    
+</body>
+</html>

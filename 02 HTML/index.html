@@ -117,17 +117,13 @@ th {
   margin-right: 0.5em;
   font-size: 2em;
 }
-.actions {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-}
+
 .close {
   height: 40px;
-  width: 40px;
-  border-radius: 50%;
+  width: 300px;
+  border-radius: 5%;
   color: white;
-  background-color: #0077b6;
+  background-color: #b66700;
   display: inline-block;
   font-weight: 300;
   cursor: pointer;
@@ -135,6 +131,12 @@ th {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 1em;
+  right: 1em;
 }
 
 @media (min-width: 900px) {
@@ -164,10 +166,12 @@ th {
 
         <div class="content animate__animated animate__zoomIn">
             <h1 class="title" >Esencia Natural</h1>
+            <p>Direccion: Av. Reforma 865 Col Centro Puebla Tel. 2997607673 Horarios de atencion: Lunes a Viernes: 9:00 am - 8:00pm sabado y domingo: 08:00 am - 2:00pm</p>
             <hr>
 
             <p>En esencia natural ofrecemos una gran variedad de productos de pasteleria para todo tipo de ocasión. 
             <br>Estamos comprometidos con brindar un producto de calidad</p>
+            <img class="logo" src="imgs/logo.png" width='200' height='200'>
             <br>
             <h2>Catalgo de productos disponibles</h2>
 
@@ -200,7 +204,38 @@ th {
 
                 </table>
             </div>
-    
+            <h2>Adornos disponibles</h2>
+            <div>
+              <table class="tabla">
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th>Descripcion</th>
+                      <th>Imagen</th>
+                  </tr>
+                  <tr>
+                      <td>Adorno Feliz cumpleaños</td>
+                      <td>+$2USD</td>
+                      <td>Cake topper con la frase 'feliz cumpleaños dentro de un circulo'   </td>
+                      <td><img src="imgs/feliz.jpg" width='200' height='250'></td>
+                  </tr>
+                  <tr>
+                      <td>Adorno Love</td>
+                      <td>+$2USD</td>
+                      <td>Cake topper con la palabra 'love' dentro de un corazon</td>
+                      <td><img src="imgs/corazon.jpg" width='200' height='250'></td>
+                  </tr>
+
+                  
+
+              </table>
+              <div class="actions">
+                <a href="formcomprar.html" class="close">
+                  <span>Comprar</span>
+                </a>
+              </div>
+          </div>
+          
         </div>
     
         
